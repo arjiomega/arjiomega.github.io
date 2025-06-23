@@ -78,19 +78,3 @@
       padding: 5%;
     }
 }
-
-@media screen and (max-width: 768px) {
-  #contacts {
-      padding: 5%;
-  }
-
-  .contacts-container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-  }
-
-  .contacts-content {
-      justify-content: center; /* Center items */
-      gap: 1rem;
-  }
-}

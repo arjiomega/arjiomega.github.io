@@ -1,49 +1,59 @@
 import React from "react";
-import '../assets/css/header.css';
-import '../assets/css/mediaheader.css';
-import PropTypes from 'prop-types';
+import '../assets/css/header.css'
+import '../assets/css/mediaheader.css'
 
-const EducationCard = ({ title, institution, duration }) => {
+const Hs = () => {
     return (
         <div className="education cus-shadow">
+
             <div className="education-top">
                 <div className="experience-top-left">
-                    <h1 className="position">{title}</h1>
-                    <h2 className="company">{institution}</h2>
+                    <h1 className="position">Highschool</h1>
+                    <h1 className="company">Al Jazeera International School - Dammam, Saudi Arabia</h1>
                 </div>
+                
                 <div className="experience-top-right">
-                    <p>{duration}</p>
+                    <h1>July 2012 - April 2015</h1>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-EducationCard.propTypes = {
-    title: PropTypes.string.isRequired,
-    institution: PropTypes.string.isRequired,
-    duration: PropTypes.string.isRequired,
-};
 
-const educationData = [
-    { title: "Highschool", institution: "Al Jazeera International School - Dammam, Saudi Arabia", duration: "July 2012 - April 2015" },
-    { title: "BS in Mechanical Engineering", institution: "Colegio de San Juan de Letran - Calamba", duration: "June 2015 - November 2020" },
-];
+
+const College = () => {
+    return (
+        <div className="education cus-shadow">
+
+            <div className="education-top">
+                <div className="experience-top-left">
+                    <h1 className="position">BS in Mechanical Engineering</h1>
+                    <h1 className="company">Colegio de San Juan de Letran - Calamba</h1>
+                </div>
+                
+                <div className="experience-top-right">
+                    <h1>June 2015 - November 2020</h1>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+
 
 export const Education = () => {
     return (
         <div className="education-container">
-            <h1 className="title">Education</h1>
+            <h1 className="title">
+                Education
+            </h1>
             <div className="educ-sidebyside">
-                {educationData.map((edu, index) => (
-                    <EducationCard
-                        key={index}
-                        title={edu.title}
-                        institution={edu.institution}
-                        duration={edu.duration}
-                    />
-                ))}
+                <College/>
+                <Hs/>
             </div>
+            
         </div>
-    );
-};
+    )
+}
