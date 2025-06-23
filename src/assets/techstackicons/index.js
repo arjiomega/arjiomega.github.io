@@ -20,6 +20,8 @@ import DjangoLogo from "./django-icon.svg";
 import GithubActionsLogo from "./github-actions.svg";
 import JavascriptLogo from "./javascript.svg";
 import FastAPILogo from "./fastapi.svg";
+import CSSIcon from "./css.png";
+import GCPLogo from "./gcp.png";
 
 export {
     PythonLogo,
@@ -43,5 +45,7 @@ export {
     DjangoLogo,
     GithubActionsLogo,
     JavascriptLogo,
-    FastAPILogo
+    FastAPILogo,
+    CSSIcon,
+    GCPLogo
 };

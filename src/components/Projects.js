@@ -54,6 +54,37 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                 <div className="projects-container">
 
                 <Project 
+                    img_url = {Image.StoreSalesForecastingGif}
+                    title = "Store Sales Forecasting Model Decay Simulation"
+                    description = "Simulate monthly incoming data every minute or as set in the cron schedule using 
+                                    dagster for orchestration and snowflake. Model retraining will be triggered after 
+                                    detecting data and/or model drift.
+                                    "
+                    repo_url = "https://github.com/arjiomega/Store-Sales-Forecasting-Model-Decay-Simulation"
+                />
+
+                <Project 
+                    img_url = "https://raw.githubusercontent.com/arjiomega/Data-Engineering-Project/refs/heads/main/resources/pipeline.png"
+                    title = "NYC TLC Trip End to End Data Engineering Project"
+                    description = "Developed an ELT pipeline to process and analyze trip data from New York City’s 
+                                    Taxi and Limousine Commission (TLC). The project extracts raw yellow and green taxi 
+                                    trip data from NYC's open data portal using Airflow, then loads the data into Google Cloud Storage 
+                                    (GCS) and BigQuery for further transformations. Data transformations are managed with DBT to build 
+                                    both staging and warehouse layers, ensuring schema consistency across both taxi datasets. Docker is 
+                                    used for containerization, orchestrating the entire process with Airflow, while Looker is integrated 
+                                    for reporting and visualization.
+                                    "
+                    repo_url = "https://github.com/arjiomega/Store-Sales-Forecasting-Model-Decay-Simulation"
+                />
+
+                <Project 
+                    img_url = {Image.DrivingAssistantGif}
+                    title = "NYC TLC Trip End to End Data Engineering Project"
+                    description = ""
+                    repo_url = "https://github.com/arjiomega/Store-Sales-Forecasting-Model-Decay-Simulation"
+                />
+
+                <Project 
                     img_url = {Image.ParkingLotGif}
                     title = "Parking Lot Availability Counter using Pixel Count"
                     description = "This is a parking lot availability counter that counts white pixels in 
@@ -84,15 +115,7 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                     repo_url = "https://github.com/arjiomega/ComputerVision_Puzzle"
                 />
 
-                <Project 
-                    img_url = {Image.StoreSalesForecastingGif}
-                    title = "Store Sales Forecasting Model Decay Simulation"
-                    description = "Simulate monthly incoming data every minute or as set in the cron schedule using 
-                                    dagster for orchestration and snowflake. Model retraining will be triggered after 
-                                    detecting data and/or model drift.
-                                    "
-                    repo_url = "https://github.com/arjiomega/Store-Sales-Forecasting-Model-Decay-Simulation"
-                />
+                
 
                 <Project 
                     img_url = {Image.NumberPredictorImg}
@@ -102,16 +125,7 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                     repo_url = "https://github.com/arjiomega/number-predictor"
                 />
 
-                <Project 
-                    img_url = {Image.CatDogGif}
-                    title = "Cat and Dog Semantic Segmentation"
-                    description = "Implementation of Debugging set introduced by Cassie Kozyrkov of Google to 
-                                    get a better understanding of model performance in subclass level and 
-                                    also to better understand data to model relationship for data preparation 
-                                    phase. Implemented the model as mentioned on the paper. 
-                                    "
-                    repo_url = "https://github.com/arjiomega/cat-vs-dog-multiclass-semantic-segmentation"
-                />
+             
 
                 <Project 
                     img_url = {Image.RecommenderImg}

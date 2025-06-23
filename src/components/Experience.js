@@ -19,12 +19,12 @@ const MLE_Job = () => {
             
             <div className="experience-description">
                 <p>
-                - Contribute mechanical engineering knowledge in welding <br/>
-                - Help further team's knowledge in different ML techniques done in weld
-                defect detection by researching scientific papers regarding the problem<br/>
-                - Introduced the importance of preparing subclasses of target data 
-                (data-driven machine learning model debugging) <br/>
-                - Contibute in data annotation and shared the dangers of mishandling labeled data online <br/>
+                - Enhanced models for defect detection in the Welding Defect Detection Project and soil nutrient prediction 
+                in the Soil Nutrient Prediction for Enhanced Fertilizer Recommendations Project through cross-disciplinary expertise. <br/>
+                - Conducted research and data analysis to integrate advanced ML techniques and key features in both projects.<br/>
+                - Improved data preparation and model debugging through data-driven strategies and optimized workflows.<br/>
+                - Led data gathering and annotation, ensuring data integrity and addressing mislabeling risks. <br/>
+                - Developed and refined models, enhancing accuracy and efficiency in detection and nutrient recommendations. <br/>
                 </p>
             </div>
 
@@ -51,13 +51,12 @@ const CFD_Job = () => {
             
             <div className="experience-description">
                 <p>
-                - Provides assistance in computational fluid dynamics simulation models 
-                (numerical solver, turbulence models, wall functions, mesh fineness,
-                    verification, and validation of results) <br/>
-                - Specializes in vehicle drag reduction system, fan optimization, thermodynamics related problems <br/>
-                - Solve the cost related issue in CFD since it is known as one of the most 
-                    computationally expensive solution by doing mesh refinement study to find minimum 
-                    possible cell count that produces reasonable results before doing further optimization.
+                - Delivered advanced CFD simulations, specializing in vehicle drag reduction, turbomachinery optimization, 
+                and complex thermodynamic challenges. <br/>
+                - Optimized simulation efficiency through mesh refinement studies, reducing computational costs by identifying 
+                the minimal cell count required for accurate results without compromising data fidelity. <br/>
+                - Provided expertise in numerical solvers, turbulence models, wall functions, and result verification and validation, 
+                ensuring high-quality and reliable simulations.  
                 </p>
             </div>
 
@@ -82,8 +81,8 @@ const MD_Job = () => {
             
             <div className="experience-description">
                 <p>
-                - Design 3D mechanical models (outsourced jigs / machine parts) <br/>
-                - Prepare and clean up models for engineering simulation purposes <br/>
+                - Designed and developed 3D mechanical models for outsourced jigs and machine parts, ensuring alignment with client specifications. <br/>
+                - Prepared and refined mechanical models for use in engineering simulations, enhancing accuracy and performance in CFD and other analytical processes. <br/>
                 </p>
             </div>
 

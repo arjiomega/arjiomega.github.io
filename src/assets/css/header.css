@@ -458,9 +458,16 @@ text-align: center;
 
 .contacts-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between icon and text */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Use inherited text color */
+    gap: 10px; /* Add spacing between icon and text */
 }
 
 .footer-container {
