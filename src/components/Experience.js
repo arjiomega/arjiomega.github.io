@@ -1,10 +1,22 @@
 import React from "react";
+
+import {
+  Collapse,
+  Button,
+  Card,
+  Typography,
+  CardBody,
+} from "@material-tailwind/react";
+
 import TargetedProject from "./TestProject";
 import * as Image from "../assets/images/index"; // assuming images or GIFs are here
 
 export const Experience = () => {
+  const [open, setOpen] = React.useState(false);
+  const toggleOpen = () => setOpen((cur) => !cur);
+
   return (
-    <div className="experience-container bg-green-100">
+    <div className="experience-container">
       <h1 className="title">Experience</h1>
 
       {/* ML/AI Engineering Role */}
@@ -18,6 +30,20 @@ export const Experience = () => {
             <h1>July 2023 – Present</h1>
           </div>
         </div>
+
+        <div className="experience-description p-4 text-sm">
+          <p>
+            • Built real-time defect detection systems with object detection and segmentation on edge devices<br />
+            • Predicted soil nutrient profiles using sparse datasets, SHAP-based explainability, and MLflow tracking<br />
+            • Created LLM-powered chatbots for customer support using LLaMA 3.2, FastAPI, and Redis queues<br />
+            • Assisted radiologists by fine-tuning medical imaging models and developing interactive Streamlit tools
+          </p>
+        </div>
+
+        <Button onClick={toggleOpen}>See highlights</Button>
+
+        <Collapse open={open}>
+        
 
         {/* All Projects under this role */}
         <TargetedProject
@@ -94,6 +120,8 @@ export const Experience = () => {
         mediaSourceName="Deep Learning-Based Classification and Semantic Segmentation of Lung Tuberculosis Lesions in Chest X-ray Images"
         mediaSourceURL="https://www.mdpi.com/2075-4418/14/9/952"
         />
+
+        </Collapse>
 
       </div>
 

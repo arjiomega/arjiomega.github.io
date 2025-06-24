@@ -17,11 +17,11 @@ const App = () => {
       <section>
         <Header/> 
         
-
+        <Skills/>
         <Experience/>
         <Education/>
         <Projects/> 
-        <Skills/>
+        
         <Contacts/>
         <Footer/>
       </section>

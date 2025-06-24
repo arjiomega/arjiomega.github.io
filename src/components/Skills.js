@@ -3,22 +3,6 @@ import '../assets/css/header.css'
 import '../assets/css/mediaheader.css'
 import * as Icons from '../assets/techstackicons/index.js';
 
-const TechItem = ({src, text}) => {
-    return (
-        <div className="skill-content">
-            <div>
-                <img src={src} className="icon" alt={text}/>
-            </div>
-            {text !== '' && 
-                (
-                    <div>
-                        <p>{text}</p>
-                    </div>
-                )
-            }
-        </div>
-    )
-}
 
 const SkillCard = ({ title, skills }) => (
   <div className="bg-white rounded-2xl shadow-lg p-6 w-full">
@@ -27,7 +11,7 @@ const SkillCard = ({ title, skills }) => (
       {skills.map(({ icon, name }, idx) => (
         <div
           key={idx}
-          className={`flex items-center justify-center`}
+          className={`flex items-center justify-center gap-2`}
         >
           <img
             src={icon}

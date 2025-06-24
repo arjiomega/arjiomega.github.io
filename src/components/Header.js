@@ -12,7 +12,7 @@ import GithubLogo from '../assets/github.png';
 export const Header = () => {
     return (
 
-    <div id="profile">
+    <div id="profile" className="mb-20">
         <div className="section__pic-container">
             <img src={PortfolioImage}
             alt="Richard Joseph Omega profile picture"

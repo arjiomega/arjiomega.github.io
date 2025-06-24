@@ -522,7 +522,7 @@ text-align: center;
 .experience-top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3%;
+    /* padding-bottom: 0%; */
 }
 
 .experience-top-left {
