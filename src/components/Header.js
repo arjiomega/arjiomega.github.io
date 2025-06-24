@@ -7,7 +7,7 @@ import PortfolioImage from '../assets/profile-pic.png';
 import LinkedinLogo from '../assets/linkedin.png';
 import GithubLogo from '../assets/github.png';
 
-
+import ResumeDoc from '../assets/RichardOmegaCV.pdf';
 
 export const Header = () => {
     return (
@@ -33,29 +33,33 @@ export const Header = () => {
             </p>
             <p className="section__text__p2 p2_bottom">Engineer</p>
             <div className="btn-container">
-                <button
-                className="btn btn-color-2"
-                onClick="window.open('./assets/resume-example.pdf')"
-                >
-                Download CV
-                </button>
-                <button className="btn btn-color-1" onClick="location.href='./#contact'">
+                <a href={ResumeDoc} download="RichardOmegaCV" target="_blank">
+                    <button
+                        className="btn btn-color-2"
+                        >
+                        Download CV
+                    </button>
+                </a>
+                
+                {/* <button className="btn btn-color-1" onClick="location.href='./#contact'">
                 Contact Info
-                </button>
+                </button> */}
             </div>
 
             <div id="socials-container">
                 <img
-                src={GithubLogo}
-                alt="My LinkedIn profile"
-                className="icon"
-                onClick="location.href='https://www.linkedin.com/in/richardomega/'"
+                    src={GithubLogo}
+                    alt="My GitHub profile"
+                    className="icon"
+                    onClick={() => window.open("https://github.com/arjiomega", "_blank")}
+                    style={{ cursor: "pointer" }}
                 />
                 <img
-                src={LinkedinLogo}
-                alt="My Github profile"
-                className="icon"
-                onClick="location.href='https://github.com/arjiomega'"
+                    src={LinkedinLogo}
+                    alt="My LinkedIn profile"
+                    className="icon"
+                    onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
+                    style={{ cursor: "pointer" }}
                 />
             </div>
 

@@ -16,7 +16,7 @@ export const Experience = () => {
   const toggleOpen = () => setOpen((cur) => !cur);
 
   return (
-    <div className="experience-container">
+    <div className="experience-container" id="experience">
       <h1 className="title">Experience</h1>
 
       {/* ML/AI Engineering Role */}

@@ -49,7 +49,7 @@ export const Education = () => {
             <h1 className="title">
                 Education
             </h1>
-            <div className="educ-sidebyside">
+            <div className="flex flex-col lg:flex-row educ-sidebyside">
                 <College/>
                 <Hs/>
             </div>

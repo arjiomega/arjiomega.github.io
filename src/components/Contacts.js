@@ -3,7 +3,7 @@ import "../assets/css/header.css"
 import "../assets/css/mediaheader.css"
 
 import EmailIcon from "../assets/email.png"
-import LinkedinIcon from "../assets/linkedin.png"
+import LinkedinLogo from '../assets/linkedin.png';
 
 export const Contacts = () => {
     return (
@@ -19,7 +19,13 @@ export const Contacts = () => {
 
 
                 <div className="contacts-content">
-                    <img src={LinkedinIcon} className="icon" />
+                    <img
+                        src={LinkedinLogo}
+                        alt="My LinkedIn profile"
+                        className="icon"
+                        onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
+                        style={{ cursor: "pointer" }}
+                    />
                     <p>Linkedin</p>
                 </div>
                 

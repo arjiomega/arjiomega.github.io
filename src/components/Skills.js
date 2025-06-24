@@ -28,7 +28,7 @@ const SkillCard = ({ title, skills }) => (
 
 export const Skills = () => {
   return (
-    <div className="bg-green-100 py-10 px-4 flex flex-col flex-wrap justify-center gap-6 mb-10" id="skills">
+    <div className="py-10 px-4 flex flex-col flex-wrap justify-center gap-6 mb-10" id="skills">
     <h1 className="title">Skills</h1>
       <SkillCard
         title="Languages"

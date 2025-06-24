@@ -16,6 +16,8 @@ import WeldGif from './weld_gif.gif'
 import farmImg from './farmPicture.png'
 import chatbotImg from './chatbotImg.png'
 import xrayImg from './xray_ai.jpg'
+import DrivingAssistantGif from './DrivingAssistantGif.gif'
+import NumberClassificationGif from './NumberClassificationGif.gif'
 
 export {
     FanOptimizationImg,
@@ -35,5 +37,7 @@ export {
     WeldGif,
     farmImg,
     chatbotImg,
-    xrayImg
+    xrayImg,
+    DrivingAssistantGif,
+    NumberClassificationGif
 }
