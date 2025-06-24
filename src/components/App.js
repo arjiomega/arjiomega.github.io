@@ -9,10 +9,6 @@ import { Experience } from './Experience';
 import { Education } from './Education';
 
 
-import TargetedProject from './TestProject';
-
-import * as Image from "../assets/images/index";
-
 const App = () => {
   return (
     
@@ -20,10 +16,12 @@ const App = () => {
       <Nav/>
       <section>
         <Header/> 
-        <Education/>
+        
+
         <Experience/>
-        <Skills/>
+        <Education/>
         <Projects/> 
+        <Skills/>
         <Contacts/>
         <Footer/>
       </section>

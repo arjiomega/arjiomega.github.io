@@ -4,7 +4,7 @@ import * as Image from "../assets/images/index"; // assuming images or GIFs are 
 
 export const Experience = () => {
   return (
-    <div className="experience-container">
+    <div className="experience-container bg-green-100">
       <h1 className="title">Experience</h1>
 
       {/* ML/AI Engineering Role */}

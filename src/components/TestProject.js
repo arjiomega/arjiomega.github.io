@@ -18,7 +18,8 @@ const TargetedProject = ({
   <h2 className="text-2xl font-bold text-center mb-6">{title}</h2>
 
   {/* Container: stacks on <lg, side-by-side on lg+ */}
-  <div className="flex flex-col-reverse lg:flex-row gap-6 items-stretch mb-3">
+  {/* <div className="flex flex-col-reverse lg:flex-row gap-6 items-stretch mb-3"> */}
+  <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-6 items-start mb-6">
   {/* Left column */}
   <div className="w-full lg:w-[80%] flex flex-col gap-4">
     <div className="bg-yellow-100 p-4 rounded-lg">
