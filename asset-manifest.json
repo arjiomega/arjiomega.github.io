@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a6b6340f.css",
-    "main.js": "/static/js/main.536d03d9.js",
+    "main.js": "/static/js/main.950f100b.js",
     "static/js/488.9a15c3ff.chunk.js": "/static/js/488.9a15c3ff.chunk.js",
     "static/media/engine.gif": "/static/media/engine.4e7a27eef401fb4306cf.gif",
     "static/media/puzzle_cv.gif": "/static/media/puzzle_cv.7281f62130ced3d71490.gif",
@@ -27,6 +27,7 @@
     "static/media/RichardOmegaCV.pdf": "/static/media/RichardOmegaCV.08f7c250848b7595db3f.pdf",
     "static/media/dagshub.png": "/static/media/dagshub.72a58317303ef459a19f.png",
     "static/media/servo_motor_explode.JPG": "/static/media/servo_motor_explode.f65bafa68f4031a5f8b5.JPG",
+    "static/media/HuggingFaceIcon.svg": "/static/media/HuggingFaceIcon.8bcf2fb06963c8b86261887b500daccd.svg",
     "static/media/pandas.png": "/static/media/pandas.5a14e52e952a5b3d1a86.png",
     "static/media/numberpredictor.png": "/static/media/numberpredictor.209ba926b12f9c377247.png",
     "static/media/parkinglotML.png": "/static/media/parkinglotML.f3363ef2c27d1f81824f.png",
@@ -52,11 +53,11 @@
     "static/media/fastapi.svg": "/static/media/fastapi.3d943fb2b4828aee335e1629a2fc4ee4.svg",
     "static/media/PyTorch.svg": "/static/media/PyTorch.091d29874e55ca1389ecf4a0eb434553.svg",
     "main.a6b6340f.css.map": "/static/css/main.a6b6340f.css.map",
-    "main.536d03d9.js.map": "/static/js/main.536d03d9.js.map",
+    "main.950f100b.js.map": "/static/js/main.950f100b.js.map",
     "488.9a15c3ff.chunk.js.map": "/static/js/488.9a15c3ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6b6340f.css",
-    "static/js/main.536d03d9.js"
+    "static/js/main.950f100b.js"
   ]
 }
