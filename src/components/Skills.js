@@ -59,6 +59,7 @@ export const Skills = () => {
         skills={[
           { icon: Icons.TensorflowLogo, name: 'Tensorflow' },
           { icon: Icons.PytorchLogo, name: 'Pytorch' },
+          { icon: Icons.HuggingFaceLogo, name: 'HuggingFace' },
           { icon: Icons.OpenCVIcon, name: 'OpenCV' },
           { icon: Icons.SKLearnIcon, name: 'Scikit-Learn' },
           { icon: Icons.EvidentlyLogo },
