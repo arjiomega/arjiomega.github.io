@@ -33,7 +33,7 @@ export const Header = () => {
             </p>
             <p className="section__text__p2 p2_bottom">Engineer</p>
             <div className="btn-container">
-                <a href={ResumeDoc} download="RichardOmegaCV" target="_blank">
+                <a href="docs.google.com/document/d/1DvjtjVf0adb5hN2vPMXTN6pvqKrzBZQicTSaz6_-uoU/export?format=pdf" download="RichardOmegaCV" target="_blank">
                     <button
                         className="btn btn-color-2"
                         >
