@@ -4,10 +4,12 @@ import React from "react";
 import "../../styles/header.css"
 import "../../styles/mediaheader.css"
 
+import Image from 'next/image';
+
 const ProjectImage = ({img_url}) => {
     return (
         <div className="project-image">
-            <img src={img_url}/>
+            <Image src={img_url} alt="Project Image"/>
         </div>
     )
 }
@@ -22,7 +24,13 @@ const ProjectText = ({title,description, repo_url}) => {
 
                 {(repo_url) && (
                     <a href={repo_url}>
-                        <img className="custom-button" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"/>
+                        <Image
+                            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                            alt="github mark"
+                            width={20}
+                            height={20}
+                            className="custom-button"
+                        />
                     </a>
                     
                 )}
@@ -201,10 +209,12 @@ const ProjectGenerator = ({
                 <p className="text-sm font-medium ">{description}</p>
             </div>
             <div className="flex w-full h-full justify-center items-center lg:w-1/2 p-5">
-                <img
-                src={media}
-                alt="Example"
-                className="max-h-full max-w-full object-contain rounded"
+                <Image
+                    src={media}
+                    alt="Example"
+                    className="max-h-full max-w-full object-contain rounded"
+                    width={20}
+                    height={20}
                 />
             </div>
         </div>

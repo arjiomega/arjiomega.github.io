@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const lorem_ipsum =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi eros, varius vel molestie sed, pharetra vel est. Quisque dignissim in lorem eget pulvinar. Vestibulum dolor libero, congue at elit sed, euismod bibendum purus. Suspendisse volutpat scelerisque quam vitae facilisis. Aenean magna erat, egestas in mi eu, convallis rutrum magna. Nullam varius diam maximus, pulvinar ex sit amet, volutpat ante. Vestibulum nec magna lobortis, tristique ipsum nec, porttitor eros. Vivamus in purus semper, rhoncus massa vitae, tempus felis. Maecenas scelerisque nulla in elit rhoncus semper. Vivamus auctor, justo in egestas fermentum, purus libero elementum est, et tincidunt libero quam in nibh. Nullam eu pulvinar urna.";
@@ -34,10 +35,12 @@ const TargetedProject = ({
   {/* Right column */}
 <div className="w-full lg:w-[20%] flex flex-col justify-between bg-gray-50 rounded-lg p-4">
   <div className="flex-1 flex items-center justify-center">
-    <img
-      src={media}
-      alt="Project Media"
-      className="h-full max-h-full w-auto object-contain"
+    <Image
+        src={media}
+        alt="Project Media"
+        width={20}
+        height={20}
+        className="h-full max-h-full w-auto object-contain"
     />
   </div>
 

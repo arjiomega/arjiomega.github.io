@@ -1,5 +1,5 @@
 "use client"
-
+import Image from 'next/image';
 import React from "react";
 import "../../styles/header.css"
 import "../../styles/mediaheader.css"
@@ -22,9 +22,11 @@ export const Contacts = () => {
 
 
                 <div className="contacts-content">
-                    <img
+                    <Image
                         src={"arjiomega.github.io/linkedin.png"}
                         alt="My LinkedIn profile"
+                        width={20}
+                        height={20}
                         className="icon"
                         onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
                         style={{ cursor: "pointer" }}
