@@ -18,14 +18,14 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches" 
-                            description="Built a computer vision system to detect parking space occupancy using OpenCV, with two distinct approaches: a rule-based pixel counting method and a fine-tuned MobileNetV2 deep learning model. The project highlights that effective solutions don't always require machine learning—simple heuristics can be sufficient in controlled conditions. However, in this case, the AI-powered approach achieved near-perfect accuracy, especially under variable lighting and environmental noise, underscoring the power of deep learning when precision and adaptability are critical." 
-                            media={"/images/weld_gif.gif"}
+                            description="Developed a vision system to detect parking space occupancy using OpenCV. Compared a simple rule-based method with a MobileNetV2 deep learning model, showing that deep learning improved accuracy under challenging conditions." 
+                            media={"/images/parkinglot.gif"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="Interactive Puzzle Solving Using Hand Tracking and Spatial Analysis in OpenCV" 
-                            description="Developed an interactive computer vision puzzle application using MediaPipe Hand Tracking and OpenCV. The system detects a user's hand via webcam and enables real-time manipulation of puzzle pieces. Each piece is continuously compared against all potential slots, and visual feedback is provided—turning a slot green when a piece is correctly positioned within its boundary. This project demonstrates spatial reasoning, gesture-based interaction, and efficient use of classic computer vision techniques to build intuitive, camera-driven experiences without reliance on heavy machine learning models." 
-                            media={"/images/weld_gif.gif"}
+                            description="Built a puzzle app using MediaPipe Hand Tracking and OpenCV. Users move pieces with their hand, and the system gives instant feedback when a piece is placed correctly—showcasing gesture-based interaction and spatial reasoning." 
+                            media={"/images/puzzle_cv.gif"}
                         />
                     </div>
 
@@ -33,14 +33,14 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Simulated Model Decay and Retraining Pipeline for Store Sales Forecasting" 
-                            description="Developed a simulation pipeline to model the effects of data and model drift on a store sales forecasting system. Historical sales data in CSV format was incrementally released at configurable intervals using Dagster for orchestration and ingested into Snowflake as the data warehouse. A model monitoring mechanism detects performance degradation or distributional drift, automatically triggering model retraining. This project demonstrates a robust, production-ready MLOps workflow to maintain model accuracy over time in a streaming data environment." 
-                            media={"/images/weld_gif.gif"}
+                            description="Created a simulation pipeline to model data and model drift in store sales forecasting. Used Dagster for orchestration and Snowflake for storage, with automatic retraining triggered by performance drops." 
+                            media={"/images/StoreSalesForecasting.gif"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="Real-Time Driving Assistant with Distance Estimation and Localized Object Detection" 
-                            description="This project showcases an intelligent driving assistant that leverages computer vision for real-time distance estimation between vehicles. A fine-tuned object detection model—trained on a custom Philippine driving dataset—detects cars under local lighting and weather conditions. Using OpenCV and geometric interpolation techniques, the system estimates vehicle distances by assuming calibrated bounding box dimensions at a known reference point. This assists in collision avoidance and enhances driver awareness in urban expressway settings." 
-                            media={"/images/weld_gif.gif"}
+                            description="Built a driving assistant that uses computer vision to estimate distances between vehicles in real time. Combines object detection and geometric interpolation to help avoid collisions and improve driver awareness." 
+                            media={"/images/DrivingAssistantGif.gif"}
                         />
                     </div>
 
@@ -48,14 +48,14 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="End-to-End Movie Management and Recommendation Platform" 
-                            description="A full-stack web application built with Django for frontend and backend CRUD operations, containerized using Docker for portability and scalability. The platform integrates a robust data engineering pipeline powered by Apache Airflow to ingest and update movie data daily. PostgreSQL serves as the core database, validated with DBT and custom tests. A FastAPI-based microservice delivers real-time movie recommendations. This project highlights a modular, production-ready architecture combining web development, MLOps, and data engineering best practices." 
-                            media={"/images/weld_gif.gif"}
+                            description="Full-stack movie management and recommendation platform. Uses Django for CRUD, Airflow for data pipelines, PostgreSQL for storage, and FastAPI for real-time recommendations. Modular and production-ready." 
+                            media={"/images/recommender.png"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="Robust Digit Classification via Classical ML and Data-Centric Optimization" 
-                            description="This project explores digit classification using classical machine learning models (e.g., SVM, k-NN, Decision Trees), prioritizing interpretability and efficient training over deep learning complexity. Emphasis was placed on data-centric strategies, including the application of various image augmentation techniques to evaluate and enhance model generalization. A systematic grid search was conducted to optimize hyperparameters for each algorithm. This approach highlights how thoughtful preprocessing and tuning can drive significant performance gains, even without deep neural networks." 
-                            media={"/images/weld_gif.gif"}
+                            description="Digit classification using classical ML models (SVM, k-NN, Decision Trees). Focused on interpretability and data-centric strategies, with image augmentation and grid search for hyperparameter tuning." 
+                            media={"/images/NumberClassificationGif.gif"}
                         />
                     </div>
 
@@ -80,14 +80,14 @@ export const MechanicalEngineeringProjects = () => {
                         {/* Left Box */}
                         <ProjectGenerator 
                             title=" Computational Fluid Dynamics-Based Parametric Optimization of Axial Fan Performance" 
-                            description="This project explores the aerodynamic optimization of an axial fan using OpenFOAM to enhance volumetric flow rate. A parametric study was conducted by varying blade cross-sections—using NACA airfoil profiles—along with chord lengths and pitch angles. The computational domain replicates an experimentally validated setup to ensure realism. Simulations were designed to compare fan configurations and their effects on airflow characteristics, demonstrating how CFD can support data-driven design decisions in rotating machinery." 
-                            media={"/images/weld_gif.gif"}
+                            description="Optimized an axial fan's airflow using OpenFOAM. Ran parametric studies on blade shapes and angles, using simulations to compare designs and support data-driven decisions in rotating machinery." 
+                            media={"/images/fan_optimization.png"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="Thermal Efficiency Optimization of Data Center Cooling Systems Using CFD" 
-                            description="This project applies Computational Fluid Dynamics (CFD) to evaluate the impact of enclosure design on thermal management in data centers. Following ASHRAE thermal guidelines, two cooling configurations—one with containment and one without—were simulated under identical cooling capacities. The study revealed that enclosing hot and cold aisles significantly improved heat extraction, minimizing thermal recirculation and maintaining equipment within the optimal temperature range. The results underscore the critical role of architectural layout in enhancing cooling efficiency and ensuring uninterrupted server performance." 
-                            media={"/images/weld_gif.gif"}
+                            description="Used CFD to study how enclosure design affects data center cooling. Simulated different layouts and found that enclosing aisles improves heat extraction and keeps equipment at optimal temperatures."
+                            media={"/images/datacenter_cooling.png"}
                         />
                     </div>
 
@@ -97,13 +97,13 @@ export const MechanicalEngineeringProjects = () => {
                         <ProjectGenerator 
                             title="SolidWorks 3D Modeling of a Wankel Rotary Engine" 
                             description="" 
-                            media={"/images/weld_gif.gif"}
+                            media={"/images/wankel_engine.png"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="SolidWorks 3D Modeling of a Servo Motor" 
                             description="" 
-                            media={"/images/weld_gif.gif"}
+                            media={"/images/servo_motor_explode.JPG"}
                         />
                     </div>
 
@@ -112,13 +112,13 @@ export const MechanicalEngineeringProjects = () => {
                         <ProjectGenerator 
                             title="Solidworks Floor Jack" 
                             description="" 
-                            media={"/images/weld_gif.gif"}
+                            media={"/images/floor_jack.png"}
                         />
                         {/* Right Box */}
                         <ProjectGenerator 
                             title="Solidworks DC Motor" 
                             description="" 
-                            media={"/images/weld_gif.gif"}
+                            media={"/images/dc_motor_explode.JPG"}
                         />
                     </div>
 
@@ -127,7 +127,7 @@ export const MechanicalEngineeringProjects = () => {
                         <ProjectGenerator 
                             title="Solidworks V6 Engine" 
                             description="" 
-                            media={"/images/weld_gif.gif"}
+                            media={"/images/engine.gif"}
                         />
                     </div>
 
@@ -163,18 +163,22 @@ const ProjectGenerator = ({
     media
 }: ProjectGeneratorProps) => {
     return (
-        <div className="border flex-grow w-full lg:w-1/2 h-60 flex-col-reverse lg:flex-row rounded flex justify-between overflow-hidden">
+        <div 
+            className="
+                shadow-lg rounded-2xl flex-grow w-full lg:w-1/2 h-72 flex-col-reverse 
+                lg:flex-row rounded flex justify-between overflow-hidden
+            "
+        >
             <div className="flex w-full h-full flex-col gap-5 lg:w-1/2 p-5">
-                <h2 className="font-bold text-xl">{title}</h2>
+                <h2 className="font-bold text-l">{title}</h2>
                 <p className="text-sm font-medium ">{description}</p>
             </div>
-            <div className="flex w-full h-full justify-center items-center lg:w-1/2 p-5">
+            <div className="flex relative w-full h-full justify-center items-center lg:w-1/2 p-5">
                 <Image
                     src={media}
                     alt="Example"
                     className="max-h-full max-w-full object-contain rounded"
-                    width={20}
-                    height={20}
+                    fill
                 />
             </div>
         </div>
@@ -189,7 +193,7 @@ export const ProjectsTemp = () => {
                 <ProjectGenerator 
                     title="Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches" 
                     description="Built a computer vision system to detect parking space occupancy using OpenCV, with two distinct approaches: a rule-based pixel counting method and a fine-tuned MobileNetV2 deep learning model. The project highlights that effective solutions don't always require machine learning—simple heuristics can be sufficient in controlled conditions. However, in this case, the AI-powered approach achieved near-perfect accuracy, especially under variable lighting and environmental noise, underscoring the power of deep learning when precision and adaptability are critical." 
-                    media={"/images/weld_gif.gif"}
+                    media={"/images/parking.gif"}
                 />
                 {/* Right Box */}
                 <ProjectGenerator 

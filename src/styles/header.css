@@ -93,7 +93,9 @@ gap: 1rem;
 .icon {
     cursor: pointer;
     height: 2rem;
-    float: left;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* BUTTONS */

@@ -12,16 +12,24 @@ export function Header() {
     return (
 
     <div id="profile" className="mb-20">
-        <div className="section__pic-container">
+        {/* <div className="section__pic-container relative">
             <Image
             src="/profile-pic.png"
             alt="Richard Joseph Omega profile picture"
-            width={200}
-            height={200}
+            fill
             style={{borderRadius: "50%"}}
             />
+        </div> */}
+        <div className="section__pic-container relative w-40 aspect-square rounded-full overflow-hidden mx-auto">
+            <Image
+                src="/profile-pic.png"
+                alt="Richard Joseph Omega profile picture"
+                fill
+                className="object-cover"
+                priority
+            />
         </div>
-        
+                
         <div className="section__text">
             <p className="section__text__p1">Hello, I&apos;m</p>
             <h1 className="title">Richard Joseph Omega</h1>
@@ -51,7 +59,7 @@ export function Header() {
                     alt="My GitHub profile"
                     width={20}
                     height={20}
-                    className="icon"
+                    className="icon rounded-full overflow-hidden"
                     onClick={() => window.open("https://github.com/arjiomega", "_blank")}
                     style={{ cursor: "pointer" }}
                 />
@@ -60,7 +68,7 @@ export function Header() {
                     alt="My LinkedIn profile"
                     width={20}
                     height={20}
-                    className="icon"
+                    className="icon rounded-full overflow-hidden"
                     onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
                     style={{ cursor: "pointer" }}
                 />

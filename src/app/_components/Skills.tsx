@@ -3,6 +3,7 @@ import "../../styles/header.css"
 import "../../styles/mediaheader.css"
 
 import Image from 'next/image';
+import { Card } from "@/components/Card";
 
 interface SkillCardProps {
     title: string;
@@ -10,7 +11,7 @@ interface SkillCardProps {
 }
 
 const SkillCard = ({ title, skills }: SkillCardProps) => (
-  <div className="bg-white rounded-2xl shadow-lg p-6 w-full">
+  <Card>
     <h2 className="text-xl font-semibold text-center mb-4">{title}</h2>
     <div className="flex flex-wrap gap-4 justify-center">
       {skills.map(({ icon,name }, idx) => (
@@ -30,7 +31,28 @@ const SkillCard = ({ title, skills }: SkillCardProps) => (
         </div>
       ))}
     </div>
-  </div>
+  </Card>
+  // <div className="bg-white rounded-2xl shadow-lg p-6 w-full">
+  //   <h2 className="text-xl font-semibold text-center mb-4">{title}</h2>
+  //   <div className="flex flex-wrap gap-4 justify-center">
+  //     {skills.map(({ icon,name }, idx) => (
+  //       <div
+  //         key={idx}
+  //         className={`flex items-center justify-center gap-2`}
+  //       >
+  //           <Image
+  //               src={icon}
+  //               alt={name || 'Tech icon'}
+  //               width={name ? 10 : 20}
+  //               height={name ? 10 : 20}
+  //               className={name ? 'w-10 h-10' : 'w-20 h-20 object-contain'}
+  //           />
+
+  //         {name && <p className="text-lg">{name}</p>}
+  //       </div>
+  //     ))}
+  //   </div>
+  // </div>
 );
 
 

@@ -10,17 +10,17 @@ import { Footer } from "./_components/Footer"
 export default function Home() {
   return (
     <div>
-      <Nav/>
-      <section>
+      {/* <Nav/> */}
+  
         <Header/>
         <Skills/>
         <Experience/>
         <Education/>
         <Projects/> 
         <Contacts/>
-        <Footer/>
+        {/* <Footer/> */}
         {/* <AboutMe/> */}
-      </section>
+  
       
     </div>
     

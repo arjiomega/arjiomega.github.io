@@ -2,10 +2,11 @@ import React from "react";
 import "../../styles/header.css"
 import "../../styles/mediaheader.css"
 
+import { Card } from "@/components/Card";
+
 const Hs = () => {
     return (
-        <div className="education cus-shadow">
-
+        <Card>
             <div className="education-top">
                 <div className="experience-top-left">
                     <h1 className="position">Highschool</h1>
@@ -16,16 +17,15 @@ const Hs = () => {
                     <h1>July 2012 - April 2015</h1>
                 </div>
             </div>
-        </div>
+        </Card>
+
     )
 }
 
 
-
 const College = () => {
     return (
-        <div className="education cus-shadow">
-
+        <Card>
             <div className="education-top">
                 <div className="experience-top-left">
                     <h1 className="position">BS in Mechanical Engineering</h1>
@@ -36,11 +36,10 @@ const College = () => {
                     <h1>June 2015 - November 2020</h1>
                 </div>
             </div>
-        </div>
+        </Card>
+        
     )
 }
-
-
 
 
 export const Education = () => {

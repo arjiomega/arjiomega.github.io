@@ -6,6 +6,8 @@ import {
   Button,
 } from "@material-tailwind/react";
 
+import { Card } from "@/components/Card";
+
 import TargetedProject from "./TestProject";
 // import * as Image from "../assets/images/index"; // assuming images or GIFs are here
 
@@ -18,7 +20,8 @@ export const Experience = () => {
       <h1 className="title">Experience</h1>
 
       {/* ML/AI Engineering Role */}
-      <div className="experience">
+      {/* <div className="experience"> */}
+      <Card>
         <div className="experience-top">
           <div className="experience-top-left">
             <h1 className="position">ML/AI Engineer</h1>
@@ -121,28 +124,31 @@ export const Experience = () => {
 
         </Collapse>
 
-      </div>
+      </Card>
+      
 
       {/* CFD Engineering Role */}
-      <div className="experience">
-        <div className="experience-top">
-          <div className="experience-top-left">
-            <h1 className="position">Computational Fluid Dynamics Engineer</h1>
-            <h1 className="company">Freelance</h1>
-          </div>
-          <div className="experience-top-right">
-            <h1>March 2018 – July 2023</h1>
-          </div>
-        </div>
+      <Card>
+            <div className="experience-top">
+                <div className="experience-top-left">
+                    <h1 className="position">Computational Fluid Dynamics Engineer</h1>
+                    <h1 className="company">Freelance</h1>
+                </div>
+                <div className="experience-top-right">
+                    <h1>March 2018 – July 2023</h1>
+                </div>
+                </div>
 
-        <div className="experience-description p-4 text-sm">
-          <p>
-            • Automated CFD workflows using OpenFOAM and Bash for turbomachinery, cooling systems, and automotive aerodynamics<br />
-            • Built scalable pipelines on AWS EC2 for parallel simulation scenarios<br />
-            • Focused on optimizing drag and thermal flow through mesh refinement, solver tuning, and result verification
-          </p>
-        </div>
-      </div>
+                <div className="experience-description p-4 text-sm">
+                <p>
+                    • Automated CFD workflows using OpenFOAM and Bash for turbomachinery, cooling systems, and automotive aerodynamics<br />
+                    • Built scalable pipelines on AWS EC2 for parallel simulation scenarios<br />
+                    • Focused on optimizing drag and thermal flow through mesh refinement, solver tuning, and result verification
+                </p>
+            </div>
+      </Card>
     </div>
+      
+      
   );
 };

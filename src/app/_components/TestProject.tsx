@@ -24,7 +24,8 @@ const TargetedProject = ({
   mediaSourceURL = null
 }: TargetedProjectProps) => {
   return (
-    <div className="p-6 mb-5 rounded-lg bg-white">
+
+  <div className="bg-white rounded-2xl shadow-lg p-6 w-full">
   <h2 className="text-2xl font-bold text-center mb-6">{title}</h2>
 
   {/* Container: stacks on <lg, side-by-side on lg+ */}
