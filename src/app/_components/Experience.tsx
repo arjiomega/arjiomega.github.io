@@ -77,7 +77,7 @@ export const Experience = () => {
         • Infrastructure: Containerized pipelines using Docker; PostgreSQL for structured data storage.
         • Deployment: Built demo API using AWS Lambda with Terraform for scalable serverless deployment.
         • Evaluation: Measured performance using RMSE and MAPE; tracked business KPIs like Cost Reduction % and Adoption Rate.`}
-        media={"/arjiomega.github.io/images/weld_gif.gif"}
+        media={"/images/weld_gif.gif"}
         />
 
 
