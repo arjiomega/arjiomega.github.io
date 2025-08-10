@@ -1,10 +1,10 @@
 "use client"
 import React from "react";
 import { ReactTyped } from "react-typed";
+import Image from 'next/image';
 
-
-import "../../styles/header.css"
-import "../../styles/mediaheader.css"
+import "../../styles/header.css";
+import "../../styles/mediaheader.css";
 
 
 // import ResumeDoc from '../assets/RichardOmegaCV.pdf';
@@ -14,8 +14,11 @@ export function Header() {
 
     <div id="profile" className="mb-20">
         <div className="section__pic-container">
-            <img src={"/arjiomega.github.io/profile-pic.png"}
+            <Image
+            src="/arjiomega.github.io/profile-pic.png"
             alt="Richard Joseph Omega profile picture"
+            width={200}
+            height={200}
             style={{borderRadius: '50%'}}
             />
         </div>
@@ -47,20 +50,38 @@ export function Header() {
             </div>
 
             <div id="socials-container">
-                <img
+                <Image
+                    src={"/arjiomega.github.io/github.png"}
+                    alt="My GitHub profile"
+                    width={20}
+                    height={20}
+                    className="icon"
+                    onClick={() => window.open("https://github.com/arjiomega", "_blank")}
+                    style={{ cursor: "pointer" }}
+                />
+                <Image
+                    src={"/arjiomega.github.io/linkedin.png"}
+                    alt="My LinkedIn profile"
+                    width={20}
+                    height={20}
+                    className="icon"
+                    onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
+                    style={{ cursor: "pointer" }}
+                />
+                {/* <img
                     src={"/arjiomega.github.io/github.png"}
                     alt="My GitHub profile"
                     className="icon"
                     onClick={() => window.open("https://github.com/arjiomega", "_blank")}
                     style={{ cursor: "pointer" }}
-                />
-                <img
+                /> */}
+                {/* <img
                     src={"/arjiomega.github.io/linkedin.png"}
                     alt="My LinkedIn profile"
                     className="icon"
                     onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
                     style={{ cursor: "pointer" }}
-                />
+                /> */}
             </div>
 
         </div>
