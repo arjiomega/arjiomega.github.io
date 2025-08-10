@@ -16,7 +16,7 @@ export const Contacts = () => {
             <div className="contacts-container">
                 <div className="contacts-content">
                     <Image
-                        src={"arjiomega.github.io/email.png"} className="icon"
+                        src={"/email.png"} className="icon"
                         alt="Email Icon"
                         width={20} height={20}
                     />
@@ -26,7 +26,7 @@ export const Contacts = () => {
 
                 <div className="contacts-content">
                     <Image
-                        src={"arjiomega.github.io/linkedin.png"}
+                        src={"/linkedin.png"}
                         alt="My LinkedIn profile"
                         width={20}
                         height={20}

@@ -58,7 +58,7 @@ export const Experience = () => {
             • Reached 95% mIoU using custom evaluation datasets tailored for edge performance validation.
             • Engineered automated label auditing tools to detect mislabeling and improve dataset integrity.
             `}
-            media={"/arjiomega.github.io/images/weld_gif.gif"}
+            media={"/images/weld_gif.gif"}
             mediaSourceName="AWS Industrial AI Blog"
             mediaSourceURL="https://aws.amazon.com/blogs/industries/artificial-intelligence-in-industrial-welding-produces-near-real-time-insights-through-virtually-100-sample-sizes/"
         />
@@ -97,7 +97,7 @@ export const Experience = () => {
         • Evaluation: Used BLEU and ROUGE scores to assess response quality and alignment with expected output.
         • Integration: Injected dynamic content into prompts via SQL queries and public APIs to improve relevance and accuracy.
         • LLMOps: MLflow used for tracking prompt effectiveness, versioning, and rollback strategies.`}
-        media={"/arjiomega.github.io/images/weld_gif.gif"}
+        media={"/images/weld_gif.gif"}
         />
 
 
@@ -114,7 +114,7 @@ export const Experience = () => {
         • Docker for portable deployment and reproducible training environments.
         • Streamlit for building the interactive annotation interface.
         • Integrated evaluation tools to measure IoU and overlay comparisons for visual QA.`}
-        media={"/arjiomega.github.io/images/weld_gif.gif"}
+        media={"/images/weld_gif.gif"}
         mediaSourceName="Deep Learning-Based Classification and Semantic Segmentation of Lung Tuberculosis Lesions in Chest X-ray Images"
         mediaSourceURL="https://www.mdpi.com/2075-4418/14/9/952"
         />

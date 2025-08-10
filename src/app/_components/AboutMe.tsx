@@ -16,7 +16,7 @@ export default function AboutMe() {
                     <div className="details-container">
                         <div className="about-me-icon">
                             <Image
-                                src="/arjiomega.github.io/experience.png"
+                                src="/experience.png"
                                 alt="Experience Icon"
                                 className="icon"
                                 width={20}
@@ -47,7 +47,7 @@ export default function AboutMe() {
 
                     <div className="details-container">
                         <Image
-                            src="/arjiomega.github.io/education.png"
+                            src="/education.png"
                             alt="Education Icon"
                             className="icon"
                             width={20}

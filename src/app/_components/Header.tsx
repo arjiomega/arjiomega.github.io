@@ -14,7 +14,7 @@ export function Header() {
     <div id="profile" className="mb-20">
         <div className="section__pic-container">
             <Image
-            src="/arjiomega.github.io/profile-pic.png"
+            src="/profile-pic.png"
             alt="Richard Joseph Omega profile picture"
             width={200}
             height={200}
@@ -47,7 +47,7 @@ export function Header() {
 
             <div id="socials-container">
                 <Image
-                    src={"/arjiomega.github.io/github.png"}
+                    src={"/github.png"}
                     alt="My GitHub profile"
                     width={20}
                     height={20}
@@ -56,7 +56,7 @@ export function Header() {
                     style={{ cursor: "pointer" }}
                 />
                 <Image
-                    src={"/arjiomega.github.io/linkedin.png"}
+                    src={"/linkedin.png"}
                     alt="My LinkedIn profile"
                     width={20}
                     height={20}

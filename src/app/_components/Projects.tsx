@@ -189,13 +189,13 @@ export const ProjectsTemp = () => {
                 <ProjectGenerator 
                     title="Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches" 
                     description="Built a computer vision system to detect parking space occupancy using OpenCV, with two distinct approaches: a rule-based pixel counting method and a fine-tuned MobileNetV2 deep learning model. The project highlights that effective solutions don't always require machine learning—simple heuristics can be sufficient in controlled conditions. However, in this case, the AI-powered approach achieved near-perfect accuracy, especially under variable lighting and environmental noise, underscoring the power of deep learning when precision and adaptability are critical." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
                 {/* Right Box */}
                 <ProjectGenerator 
                     title="Interactive Puzzle Solving Using Hand Tracking and Spatial Analysis in OpenCV" 
                     description="Developed an interactive computer vision puzzle application using MediaPipe Hand Tracking and OpenCV. The system detects a user's hand via webcam and enables real-time manipulation of puzzle pieces. Each piece is continuously compared against all potential slots, and visual feedback is provided—turning a slot green when a piece is correctly positioned within its boundary. This project demonstrates spatial reasoning, gesture-based interaction, and efficient use of classic computer vision techniques to build intuitive, camera-driven experiences without reliance on heavy machine learning models." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
             </div>
 
@@ -204,13 +204,13 @@ export const ProjectsTemp = () => {
                 <ProjectGenerator 
                     title="Simulated Model Decay and Retraining Pipeline for Store Sales Forecasting" 
                     description="Developed a simulation pipeline to model the effects of data and model drift on a store sales forecasting system. Historical sales data in CSV format was incrementally released at configurable intervals using Dagster for orchestration and ingested into Snowflake as the data warehouse. A model monitoring mechanism detects performance degradation or distributional drift, automatically triggering model retraining. This project demonstrates a robust, production-ready MLOps workflow to maintain model accuracy over time in a streaming data environment." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
                 {/* Right Box */}
                 <ProjectGenerator 
                     title="Real-Time Driving Assistant with Distance Estimation and Localized Object Detection" 
                     description="This project showcases an intelligent driving assistant that leverages computer vision for real-time distance estimation between vehicles. A fine-tuned object detection model—trained on a custom Philippine driving dataset—detects cars under local lighting and weather conditions. Using OpenCV and geometric interpolation techniques, the system estimates vehicle distances by assuming calibrated bounding box dimensions at a known reference point. This assists in collision avoidance and enhances driver awareness in urban expressway settings." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
             </div>
 
@@ -219,13 +219,13 @@ export const ProjectsTemp = () => {
                 <ProjectGenerator 
                     title="End-to-End Movie Management and Recommendation Platform" 
                     description="A full-stack web application built with Django for frontend and backend CRUD operations, containerized using Docker for portability and scalability. The platform integrates a robust data engineering pipeline powered by Apache Airflow to ingest and update movie data daily. PostgreSQL serves as the core database, validated with DBT and custom tests. A FastAPI-based microservice delivers real-time movie recommendations. This project highlights a modular, production-ready architecture combining web development, MLOps, and data engineering best practices." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
                 {/* Right Box */}
                 <ProjectGenerator 
                     title="Robust Digit Classification via Classical ML and Data-Centric Optimization" 
                     description="This project explores digit classification using classical machine learning models (e.g., SVM, k-NN, Decision Trees), prioritizing interpretability and efficient training over deep learning complexity. Emphasis was placed on data-centric strategies, including the application of various image augmentation techniques to evaluate and enhance model generalization. A systematic grid search was conducted to optimize hyperparameters for each algorithm. This approach highlights how thoughtful preprocessing and tuning can drive significant performance gains, even without deep neural networks." 
-                    media={"/arjiomega.github.io/images/weld_gif.gif"}
+                    media={"/images/weld_gif.gif"}
                 />
             </div>
 

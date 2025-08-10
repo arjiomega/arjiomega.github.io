@@ -46,7 +46,7 @@ const TargetedProject = ({
 <div className="w-full lg:w-[20%] flex flex-col justify-between bg-gray-50 rounded-lg p-4">
   <div className="flex-1 flex items-center justify-center">
     <Image
-        src={media || "/arjiomega.github.io/images/weld_gif.gif"}
+        src={media || "/images/weld_gif.gif"}
         alt="Project Media"
         width={20}
         height={20}

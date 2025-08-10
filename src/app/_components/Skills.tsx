@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/header.css"
 import "../../styles/mediaheader.css"
-// import * as Icons from '/arjiomega.github.io/techstackicons/index.js';
+
 import Image from 'next/image';
 
 interface SkillCardProps {
@@ -41,43 +41,43 @@ export const Skills = () => {
       <SkillCard
         title="Languages"
         skills={[
-          { icon: "/arjiomega.github.io/techstackicons/python.svg", name: 'Python' },
-          { icon: "/arjiomega.github.io/techstackicons/html-5.svg", name: 'HTML/CSS' },
-          { icon: "/arjiomega.github.io/techstackicons/javascript.svg", name: 'JavaScript' },
+          { icon: "/techstackicons/python.svg", name: 'Python' },
+          { icon: "/techstackicons/html-5.svg", name: 'HTML/CSS' },
+          { icon: "/techstackicons/javascript.svg", name: 'JavaScript' },
         ]}
       />
       <SkillCard
         title="Backend / APIs"
         skills={[
-          { icon: "/arjiomega.github.io/techstackicons/django-icon.svg", name: 'Django' },
-          { icon: "/arjiomega.github.io/techstackicons/fastapi.svg", name: 'FastAPI' },
+          { icon: "/techstackicons/django-icon.svg", name: 'Django' },
+          { icon: "/techstackicons/fastapi.svg", name: 'FastAPI' },
         ]}
       />
       <SkillCard
         title="Development and Tools"
         skills={[
-          { icon: "/arjiomega.github.io/techstackicons/docker-icon.svg", name: 'Docker' },
-          { icon: "/arjiomega.github.io/techstackicons/postgresql.svg", name: 'Postgresql' },
-          { icon: "/arjiomega.github.io/techstackicons/git-icon.svg", name: 'Git (Code Version Control)' },
-          { icon: "/arjiomega.github.io/techstackicons/github-actions.svg", name: 'Github Actions (CI/CD)' },
+          { icon: "/techstackicons/docker-icon.svg", name: 'Docker' },
+          { icon: "/techstackicons/postgresql.svg", name: 'Postgresql' },
+          { icon: "/techstackicons/git-icon.svg", name: 'Git (Code Version Control)' },
+          { icon: "/techstackicons/github-actions.svg", name: 'Github Actions (CI/CD)' },
         ]}
       />
       <SkillCard
         title="Machine Learning / Data Science"
         skills={[
-          { icon: "/arjiomega.github.io/techstackicons/tensorflow.svg", name: 'Tensorflow' },
-          { icon: "/arjiomega.github.io/techstackicons/PyTorch.svg", name: 'Pytorch' },
-          { icon: "/arjiomega.github.io/techstackicons/HuggingFaceIcon.svg", name: 'HuggingFace' },
-          { icon: "/arjiomega.github.io/techstackicons/opencv.svg", name: 'OpenCV' },
-          { icon: "/arjiomega.github.io/techstackicons/sklearn.png", name: 'Scikit-Learn' },
-          { icon: "/arjiomega.github.io/techstackicons/pandas.png" },
-          { icon: "/arjiomega.github.io/techstackicons/matplotlib.svg" },
-          { icon: "/arjiomega.github.io/techstackicons/numpy.svg", name: 'Numpy' },
-          { icon: "/arjiomega.github.io/techstackicons/seaborn.svg"},
-          { icon: "/arjiomega.github.io/techstackicons/paperspace.svg" },
-          { icon: "/arjiomega.github.io/techstackicons/dvc.svg" },
-          { icon: "/arjiomega.github.io/techstackicons/evidentlylogo.png" },
-          { icon: "/arjiomega.github.io/techstackicons/MLflow-Logo.svg" },
+          { icon: "/techstackicons/tensorflow.svg", name: 'Tensorflow' },
+          { icon: "/techstackicons/PyTorch.svg", name: 'Pytorch' },
+          { icon: "/techstackicons/HuggingFaceIcon.svg", name: 'HuggingFace' },
+          { icon: "/techstackicons/opencv.svg", name: 'OpenCV' },
+          { icon: "/techstackicons/sklearn.png", name: 'Scikit-Learn' },
+          { icon: "/techstackicons/pandas.png" },
+          { icon: "/techstackicons/matplotlib.svg" },
+          { icon: "/techstackicons/numpy.svg", name: 'Numpy' },
+          { icon: "/techstackicons/seaborn.svg"},
+          { icon: "/techstackicons/paperspace.svg" },
+          { icon: "/techstackicons/dvc.svg" },
+          { icon: "/techstackicons/evidentlylogo.png" },
+          { icon: "/techstackicons/MLflow-Logo.svg" },
         ]}
       />
      
