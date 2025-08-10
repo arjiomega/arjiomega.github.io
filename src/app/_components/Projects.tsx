@@ -42,16 +42,6 @@ const ProjectText = ({title,description, repo_url}) => {
 }
 
 
-const Project = ({img_url,title,description,repo_url = false}) => {
-    return (
-        <div className="project cus-shadow">
-            <ProjectImage img_url={img_url}/>
-            <ProjectText title={title} description={description} repo_url={repo_url}/>
-            
-        </div>
-    )
-}
-
 export const SoftwareAndMachineLearningEngineeringProjects = () => {
     return (
 

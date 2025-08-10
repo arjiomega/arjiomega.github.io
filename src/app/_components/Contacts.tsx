@@ -15,8 +15,11 @@ export const Contacts = () => {
 
             <div className="contacts-container">
                 <div className="contacts-content">
-
-                    <img src={"arjiomega.github.io/email.png"} className="icon" />
+                    <Image
+                        src={"arjiomega.github.io/email.png"} className="icon"
+                        alt="Email Icon"
+                        width={20} height={20}
+                    />
                     <p>richardjoseph.omega@gmail.com</p>
                 </div>
 

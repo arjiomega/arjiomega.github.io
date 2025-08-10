@@ -4,9 +4,6 @@ import React from "react";
 import {
   Collapse,
   Button,
-  Card,
-  Typography,
-  CardBody,
 } from "@material-tailwind/react";
 
 import TargetedProject from "./TestProject";

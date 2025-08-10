@@ -1,13 +1,12 @@
 "use client"
 import React from "react";
 import { ReactTyped } from "react-typed";
-import Image from 'next/image';
+import Image from "next/image";
 
 import "../../styles/header.css";
 import "../../styles/mediaheader.css";
 
 
-// import ResumeDoc from '../assets/RichardOmegaCV.pdf';
 
 export function Header() {
     return (
@@ -19,12 +18,12 @@ export function Header() {
             alt="Richard Joseph Omega profile picture"
             width={200}
             height={200}
-            style={{borderRadius: '50%'}}
+            style={{borderRadius: "50%"}}
             />
         </div>
         
         <div className="section__text">
-            <p className="section__text__p1">Hello, I'm</p>
+            <p className="section__text__p1">Hello, I&apos;m</p>
             <h1 className="title">Richard Joseph Omega</h1>
             <p className="section__text__p2">{" "}
                 <ReactTyped
@@ -44,9 +43,6 @@ export function Header() {
                     </button>
                 </a>
                 
-                {/* <button className="btn btn-color-1" onClick="location.href='./#contact'">
-                Contact Info
-                </button> */}
             </div>
 
             <div id="socials-container">
@@ -68,24 +64,10 @@ export function Header() {
                     onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
                     style={{ cursor: "pointer" }}
                 />
-                {/* <img
-                    src={"/arjiomega.github.io/github.png"}
-                    alt="My GitHub profile"
-                    className="icon"
-                    onClick={() => window.open("https://github.com/arjiomega", "_blank")}
-                    style={{ cursor: "pointer" }}
-                /> */}
-                {/* <img
-                    src={"/arjiomega.github.io/linkedin.png"}
-                    alt="My LinkedIn profile"
-                    className="icon"
-                    onClick={() => window.open("https://www.linkedin.com/in/richardomega/", "_blank")}
-                    style={{ cursor: "pointer" }}
-                /> */}
+             
             </div>
 
         </div>
     </div>
-
     )
 };
