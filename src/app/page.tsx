@@ -1,5 +1,3 @@
-import Image from "next/image";
-import AboutMe from "./_components/AboutMe";
 import { Nav } from "./_components/Nav";
 import { Header } from "./_components/Header"
 import { Skills } from "./_components/Skills"
