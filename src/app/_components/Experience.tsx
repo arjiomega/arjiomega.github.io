@@ -38,7 +38,7 @@ export const Experience = () => {
           </p>
         </div>
 
-        <Button onClick={toggleOpen}>See highlights</Button>
+        <Button type="button" onClick={toggleOpen as any}>See highlights</Button>
 
         <Collapse open={open}>
         
