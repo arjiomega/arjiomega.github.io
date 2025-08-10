@@ -4,6 +4,16 @@ import Image from 'next/image';
 const lorem_ipsum =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi eros, varius vel molestie sed, pharetra vel est. Quisque dignissim in lorem eget pulvinar. Vestibulum dolor libero, congue at elit sed, euismod bibendum purus. Suspendisse volutpat scelerisque quam vitae facilisis. Aenean magna erat, egestas in mi eu, convallis rutrum magna. Nullam varius diam maximus, pulvinar ex sit amet, volutpat ante. Vestibulum nec magna lobortis, tristique ipsum nec, porttitor eros. Vivamus in purus semper, rhoncus massa vitae, tempus felis. Maecenas scelerisque nulla in elit rhoncus semper. Vivamus auctor, justo in egestas fermentum, purus libero elementum est, et tincidunt libero quam in nibh. Nullam eu pulvinar urna.";
 
+interface TargetedProjectProps {
+  title?: string;
+  project_overview?: string;
+  contributions?: string;
+  techDetails?: string;
+  media?: string; // <-- add string here
+  mediaSourceName?: string | null;
+  mediaSourceURL?: string | null;
+}
+  
 const TargetedProject = ({
   title = "What is it?",
   project_overview = lorem_ipsum,
@@ -12,7 +22,7 @@ const TargetedProject = ({
   media,
   mediaSourceName = null,
   mediaSourceURL = null
-}) => {
+}: TargetedProjectProps) => {
   return (
     <div className="p-6 mb-5 rounded-lg bg-white">
   <h2 className="text-2xl font-bold text-center mb-6">{title}</h2>
@@ -36,7 +46,7 @@ const TargetedProject = ({
 <div className="w-full lg:w-[20%] flex flex-col justify-between bg-gray-50 rounded-lg p-4">
   <div className="flex-1 flex items-center justify-center">
     <Image
-        src={media}
+        src={media || "/arjiomega.github.io/images/weld_gif.gif"}
         alt="Project Media"
         width={20}
         height={20}

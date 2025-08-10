@@ -6,42 +6,6 @@ import "../../styles/mediaheader.css"
 
 import Image from 'next/image';
 
-const ProjectImage = ({img_url}) => {
-    return (
-        <div className="project-image">
-            <Image src={img_url} alt="Project Image"/>
-        </div>
-    )
-}
-
-
-const ProjectText = ({title,description, repo_url}) => {
-    return (
-        <div className="project-text">
-
-            <div className="project-text-title">
-                <h1>{title}</h1>
-
-                {(repo_url) && (
-                    <a href={repo_url}>
-                        <Image
-                            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-                            alt="github mark"
-                            width={20}
-                            height={20}
-                            className="custom-button"
-                        />
-                    </a>
-                    
-                )}
-            </div>
-            
-            <p>{description}</p>
-        </div>
-    )
-}
-
-
 export const SoftwareAndMachineLearningEngineeringProjects = () => {
     return (
 
@@ -187,11 +151,17 @@ export const Projects = () => {
     )
 }
 
+interface ProjectGeneratorProps {
+    title: string;
+    description: string;
+    media: string;
+}
+
 const ProjectGenerator = ({
     title,
     description,
     media
-}) => {
+}: ProjectGeneratorProps) => {
     return (
         <div className="border flex-grow w-full lg:w-1/2 h-60 flex-col-reverse lg:flex-row rounded flex justify-between overflow-hidden">
             <div className="flex w-full h-full flex-col gap-5 lg:w-1/2 p-5">

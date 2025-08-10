@@ -38,7 +38,7 @@ export const Experience = () => {
           </p>
         </div>
 
-        <Button type="button" onClick={toggleOpen as any}>See highlights</Button>
+        <button type="button" onClick={toggleOpen} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">See highlights</button>
 
         <Collapse open={open}>
         

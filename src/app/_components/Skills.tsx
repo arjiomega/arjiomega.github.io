@@ -4,7 +4,12 @@ import "../../styles/mediaheader.css"
 // import * as Icons from '/arjiomega.github.io/techstackicons/index.js';
 import Image from 'next/image';
 
-const SkillCard = ({ title, skills }) => (
+interface SkillCardProps {
+    title: string;
+    skills: { icon: string; name?: string }[];
+}
+
+const SkillCard = ({ title, skills }: SkillCardProps) => (
   <div className="bg-white rounded-2xl shadow-lg p-6 w-full">
     <h2 className="text-xl font-semibold text-center mb-4">{title}</h2>
     <div className="flex flex-wrap gap-4 justify-center">
