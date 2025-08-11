@@ -1,33 +1,47 @@
-export async function generateStaticParams() {
-  return [
-    { slug: "vision-based-parking-lot-occupancy-detection-with-classical-and-deep-learning-approaches" },
-    { slug: "interactive-puzzle-solving-using-hand-tracking-and-spatial-analysis-in-opencv" },
-    { slug: "simulated-model-decay-and-retraining-pipeline-for-store-sales-forecasting" },
-    { slug: "real-time-driving-assistant-with-distance-estimation-and-localized-object-detection" },
-    { slug: "end-to-end-movie-management-and-recommendation-platform" },
-    { slug: "robust-digit-classification-via-classical-ml-and-data-centric-optimization" },
-    { slug: "computational-fluid-dynamics-based-parametric-optimization-of-axial-fan-performance" },
-    { slug: "thermal-efficiency-optimization-of-data-center-cooling-systems-using-cfd" },
-    { slug: "solidworks-3d-modeling-of-a-wankel-rotary-engine" },
-    { slug: "solidworks-3d-modeling-of-a-servo-motor" },
-    { slug: "solidworks-floor-jack" },
-    { slug: "solidworks-dc-motor" },
-    { slug: "solidworks-v6-engine" }
-  ];
+// src/app/projects/[slug]/page.tsx
+import projectsData from "@/data/projects.json";
+
+interface Project {
+  slug: string;
+  title: string;
+  description: string;
+  media: string;
 }
 
+interface ProjectGroup {
+  group_title: string;
+  list_of_projects: Project[];
+}
 
+export async function generateStaticParams() {
+  const groups = projectsData as ProjectGroup[];
+  return groups.flatMap((g) =>
+    g.list_of_projects.map((p) => ({ slug: p.slug }))
+  );
+}
 
-export default function ProjectPage({
+// NOTE: params is a Promise in Next 15 — type it that way and await it
+export default async function ProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
+
+  const groups = projectsData as ProjectGroup[];
+  const project = groups
+    .flatMap((g) => g.list_of_projects)
+    .find((p) => p.slug === slug);
+
+  if (!project) {
+    return <div>Project not found</div>; // or `notFound()` from next/navigation
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-3xl font-bold mb-4">Project: {slug}</h1>
-      <p className="text-lg">Details about the project &quot;{slug}&quot; will go here.</p>
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+      <p className="pb-4">{project.description}</p>
+      <img src={project.media} alt={project.title} />
     </div>
   );
 }
