@@ -50,7 +50,7 @@ export default async function ProjectPage({
   try {
     markdown = await fs.readFile(mdPath, "utf8");
   } catch {
-    markdown = "*Could not load sample.md*";
+    markdown = "*No project details available.*";
   }
 
   // Convert markdown to HTML
