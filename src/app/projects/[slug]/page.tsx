@@ -58,13 +58,14 @@ export default async function ProjectPage({
   const contentHtml = processed.toString();
 
   return (
-    <div className="p-4">
+    <div className="markdown-body p-4">
       <div
         className="
-          [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:mb-4 
-          [&>h2]:text-2xl 
-          [&>h3]:text-xl 
+          [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:pb-4 
+          [&>h2]:text-2xl [&>h2]:py-4 
+          [&>h3]:text-xl [&>h3]:py-4 
           [&>p]:mb-4 
+          [&>pre]:bg-gray-900 [&>pre]:text-green-200 [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:my-4 [&>pre]:overflow-x-auto
           [&>ul]:list-disc 
           [&>ul]:pl-6
         "

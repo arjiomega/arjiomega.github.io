@@ -1,13 +1,15 @@
 "use client"
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export const Nav = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
-        <a href="#about" className="inline-flex items-center">
+        <a href="/" className="inline-flex items-center">
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
             Richard Joseph Omega
           </span>

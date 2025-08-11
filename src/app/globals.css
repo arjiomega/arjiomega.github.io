@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.markdown-body a {
+  color: #5b8df8; /* Tailwind blue-600 */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.markdown-body a:hover {
+  color: #1e40af; /* Tailwind blue-800 */
+}

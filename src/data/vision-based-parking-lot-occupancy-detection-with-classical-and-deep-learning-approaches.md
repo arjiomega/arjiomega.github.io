@@ -17,7 +17,7 @@ This method checks each parking slot by counting nonzero (white) pixels after pr
 
 White pixels indicate something is present in the slot. The system compares the pixel count to a set threshold to decide if a space is available.
 
-[(View code on GitHub)](https://github.com/arjiomega/CarPark_ComputerVision)
+[View code on GitHub](https://github.com/arjiomega/CarPark_ComputerVision)
 
 
 ## Deep Learning Approach
@@ -40,4 +40,4 @@ The GIF above shows predictions for each space, frame by frame, using OpenCV.
 ![Sample Image](/images/dl_parkinglot.png)
 ![Sample Image](/images/dl2_parkinglot.png)
 
-[(View code on GitHub)](https://github.com/arjiomega/Parking-Lot-Availability-CNN-Classification)
+[View code on GitHub](https://github.com/arjiomega/Parking-Lot-Availability-CNN-Classification)
