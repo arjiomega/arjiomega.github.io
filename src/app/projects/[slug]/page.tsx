@@ -1,6 +1,11 @@
 // src/app/projects/[slug]/page.tsx
 import projectsData from "@/data/projects.json";
 
+import fs from "fs/promises";
+import path from "path";
+import { remark } from 'remark';
+import html from 'remark-html';
+
 interface Project {
   slug: string;
   title: string;
@@ -12,6 +17,7 @@ interface ProjectGroup {
   group_title: string;
   list_of_projects: Project[];
 }
+
 
 export async function generateStaticParams() {
   const groups = projectsData as ProjectGroup[];
@@ -33,15 +39,37 @@ export default async function ProjectPage({
     .flatMap((g) => g.list_of_projects)
     .find((p) => p.slug === slug);
 
+  console.log(slug)
+
   if (!project) {
     return <div>Project not found</div>; // or `notFound()` from next/navigation
   }
 
+  const mdPath = path.join(process.cwd(), "src", "data", `${slug}.md`);
+  let markdown = "";
+  try {
+    markdown = await fs.readFile(mdPath, "utf8");
+  } catch {
+    markdown = "*Could not load sample.md*";
+  }
+
+  // Convert markdown to HTML
+  const processed = await remark().use(html).process(markdown);
+  const contentHtml = processed.toString();
+
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-      <p className="pb-4">{project.description}</p>
-      <img src={project.media} alt={project.title} />
+      <div
+        className="
+          [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:mb-4 
+          [&>h2]:text-2xl 
+          [&>h3]:text-xl 
+          [&>p]:mb-4 
+          [&>ul]:list-disc 
+          [&>ul]:pl-6
+        "
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
     </div>
   );
 }

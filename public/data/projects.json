@@ -1,0 +1,91 @@
+[
+  {
+    "group_title": "Software and Machine Learning Projects",
+    "list_of_projects": [
+      {
+        "title": "Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches",
+        "description": "Developed a vision system to detect parking space occupancy using OpenCV. Compared a simple rule-based method with a MobileNetV2 deep learning model, showing that deep learning improved accuracy under challenging conditions.",
+        "slug": "vision-based-parking-lot-occupancy-detection-with-classical-and-deep-learning-approaches",
+        "media": "/images/parkinglot.gif"
+      },
+      {
+        "title": "Interactive Puzzle Solving Using Hand Tracking and Spatial Analysis in OpenCV",
+        "description": "Built a puzzle app using MediaPipe Hand Tracking and OpenCV. Users move pieces with their hand, and the system gives instant feedback when a piece is placed correctly—showcasing gesture-based interaction and spatial reasoning.",
+        "slug": "interactive-puzzle-solving-using-hand-tracking-and-spatial-analysis-in-opencv",
+        "media": "/images/puzzle_cv.gif"
+      },
+      {
+        "title": "Simulated Model Decay and Retraining Pipeline for Store Sales Forecasting",
+        "description": "Created a simulation pipeline to model data and model drift in store sales forecasting. Used Dagster for orchestration and Snowflake for storage, with automatic retraining triggered by performance drops.",
+        "slug": "simulated-model-decay-and-retraining-pipeline-for-store-sales-forecasting",
+        "media": "/images/StoreSalesForecasting.gif"
+      },
+      {
+        "title": "Real-Time Driving Assistant with Distance Estimation and Localized Object Detection",
+        "description": "Built a driving assistant that uses computer vision to estimate distances between vehicles in real time. Combines object detection and geometric interpolation to help avoid collisions and improve driver awareness.",
+        "slug": "real-time-driving-assistant-with-distance-estimation-and-localized-object-detection",
+        "media": "/images/DrivingAssistantGif.gif"
+      },
+      {
+        "title": "End-to-End Movie Management and Recommendation Platform",
+        "description": "Full-stack movie management and recommendation platform. Uses Django for CRUD, Airflow for data pipelines, PostgreSQL for storage, and FastAPI for real-time recommendations. Modular and production-ready.",
+        "slug": "end-to-end-movie-management-and-recommendation-platform",
+        "media": "/images/recommender.png"
+      },
+      {
+        "title": "Robust Digit Classification via Classical ML and Data-Centric Optimization",
+        "description": "Digit classification using classical ML models (SVM, k-NN, Decision Trees). Focused on interpretability and data-centric strategies, with image augmentation and grid search for hyperparameter tuning.",
+        "slug": "robust-digit-classification-via-classical-ml-and-data-centric-optimization",
+        "media": "/images/NumberClassificationGif.gif"
+      }
+    ]
+  },
+  {
+    "group_title": "Mechanical Engineering Projects",
+    "list_of_projects": [
+      {
+        "title": "Computational Fluid Dynamics-Based Parametric Optimization of Axial Fan Performance",
+        "description": "Optimized an axial fan's airflow using OpenFOAM. Ran parametric studies on blade shapes and angles, using simulations to compare designs and support data-driven decisions in rotating machinery.",
+        "slug": "computational-fluid-dynamics-based-parametric-optimization-of-axial-fan-performance",
+        "media": "/images/fan_optimization.png"
+      },
+      {
+        "title": "Thermal Efficiency Optimization of Data Center Cooling Systems Using CFD",
+        "description": "Used CFD to study how enclosure design affects data center cooling. Simulated different layouts and found that enclosing aisles improves heat extraction and keeps equipment at optimal temperatures.",
+        "slug": "thermal-efficiency-optimization-of-data-center-cooling-systems-using-cfd",
+        "media": "/images/datacenter_cooling.png"
+      },
+      {
+        "title": "SolidWorks 3D Modeling of a Wankel Rotary Engine",
+        "description": "",
+        "slug": "solidworks-3d-modeling-of-a-wankel-rotary-engine",
+        "media": "/images/wankel_engine.png"
+      },
+      {
+        "title": "SolidWorks 3D Modeling of a Servo Motor",
+        "description": "",
+        "slug": "solidworks-3d-modeling-of-a-servo-motor",
+        "media": "/images/servo_motor_explode.JPG"
+      },
+      {
+        "title": "Solidworks Floor Jack",
+        "description": "",
+        "slug": "solidworks-floor-jack",
+        "media": "/images/floor_jack.png"
+      },
+      {
+        "title": "Solidworks DC Motor",
+        "description": "",
+        "slug": "solidworks-dc-motor",
+        "media": "/images/dc_motor_explode.JPG"
+      },
+      {
+        "title": "Solidworks V6 Engine",
+        "description": "",
+        "slug": "solidworks-v6-engine",
+        "media": "/images/engine.gif"
+      }
+    ]
+  }
+]
+
