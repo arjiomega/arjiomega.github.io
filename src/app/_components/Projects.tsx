@@ -6,6 +6,43 @@ import "../../styles/mediaheader.css"
 
 import Image from 'next/image';
 
+interface ProjectGeneratorProps {
+    title: string;
+    description: string;
+    media: string;
+}
+
+const ProjectGenerator = ({
+    title,
+    description,
+    media
+}: ProjectGeneratorProps) => {
+    return (
+        <div 
+            // overflow-hidden
+            className="
+            
+                shadow-lg flex-grow w-full lg:w-1/2 lg:h-72 flex-col-reverse 
+                lg:flex-row rounded flex justify-between overflow-hidden
+            "
+        >
+            <div className="flex w-full h-full flex-col gap-5 lg:w-1/2 p-5">
+                <h2 className="font-bold text-l">{title}</h2>
+                <p className="text-sm font-medium ">{description}</p>
+            </div>
+            <div className="flex w-full h-full justify-center items-center lg:w-1/2 p-5">
+                <Image
+                    src={media}
+                    alt="Example"
+                    className="max-h-full max-w-full object-contain rounded"
+                    width={500}
+                    height={500}
+                />
+            </div>
+        </div>
+    )
+}
+
 export const SoftwareAndMachineLearningEngineeringProjects = () => {
     return (
 
@@ -14,7 +51,7 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                 <h1>Software and Machine Learning Projects</h1>
 
                 <div className="flex flex-col gap-5 mb-10">
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80 pb-3">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches" 
@@ -29,7 +66,7 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80 pb-3">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Simulated Model Decay and Retraining Pipeline for Store Sales Forecasting" 
@@ -44,7 +81,7 @@ export const SoftwareAndMachineLearningEngineeringProjects = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80 pb-3">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="End-to-End Movie Management and Recommendation Platform" 
@@ -76,7 +113,7 @@ export const MechanicalEngineeringProjects = () => {
                 <h1>Mechanical Engineering Projects</h1>
 
                 <div className="flex flex-col gap-5 mb-10">
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title=" Computational Fluid Dynamics-Based Parametric Optimization of Axial Fan Performance" 
@@ -92,7 +129,7 @@ export const MechanicalEngineeringProjects = () => {
                     </div>
 
 
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="SolidWorks 3D Modeling of a Wankel Rotary Engine" 
@@ -107,7 +144,7 @@ export const MechanicalEngineeringProjects = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Solidworks Floor Jack" 
@@ -122,7 +159,7 @@ export const MechanicalEngineeringProjects = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-4 h-80">
+                    <div className="flex flex-col lg:flex-row gap-4 lg:h-80">
                         {/* Left Box */}
                         <ProjectGenerator 
                             title="Solidworks V6 Engine" 
@@ -151,44 +188,10 @@ export const Projects = () => {
     )
 }
 
-interface ProjectGeneratorProps {
-    title: string;
-    description: string;
-    media: string;
-}
-
-const ProjectGenerator = ({
-    title,
-    description,
-    media
-}: ProjectGeneratorProps) => {
-    return (
-        <div 
-            className="
-                shadow-lg rounded-2xl flex-grow w-full lg:w-1/2 h-72 flex-col-reverse 
-                lg:flex-row rounded flex justify-between overflow-hidden
-            "
-        >
-            <div className="flex w-full h-full flex-col gap-5 lg:w-1/2 p-5">
-                <h2 className="font-bold text-l">{title}</h2>
-                <p className="text-sm font-medium ">{description}</p>
-            </div>
-            <div className="flex relative w-full h-full justify-center items-center lg:w-1/2 p-5">
-                <Image
-                    src={media}
-                    alt="Example"
-                    className="max-h-full max-w-full object-contain rounded"
-                    fill
-                />
-            </div>
-        </div>
-    )
-}
-
 export const ProjectsTemp = () => {
     return (
         <div className="flex flex-col gap-5 mb-10">
-            <div className="flex flex-col lg:flex-row gap-4 h-80">
+            <div className="flex flex-col lg:flex-row gap-4 h-80 pb-5">
                 {/* Left Box */}
                 <ProjectGenerator 
                     title="Vision-Based Parking Lot Occupancy Detection with Classical and Deep Learning Approaches" 
