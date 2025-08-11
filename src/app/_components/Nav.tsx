@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import Link from "next/link";
 
 export const Nav = () => {
   const router = useRouter();
@@ -9,16 +10,16 @@ export const Nav = () => {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
-        <a href="/" className="inline-flex items-center">
+        <Link href="/" className="inline-flex items-center">
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
             Richard Joseph Omega
           </span>
-        </a>
+        </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
-          <li><a href="#profile" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">About</a></li>
-          <li><a href="#experience" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Experience</a></li>
-          <li><a href="#projects" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Projects</a></li>
-          <li><a href="#contacts" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Contact</a></li>
+          <li><Link href="#profile" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">About</Link></li>
+          <li><Link href="#experience" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Experience</Link></li>
+          <li><Link href="#projects" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Projects</Link></li>
+          <li><Link href="#contacts" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Contact</Link></li>
         </ul>
         <div className="lg:hidden z-50 relative">
           <button
