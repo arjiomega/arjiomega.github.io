@@ -27,8 +27,8 @@
         "media": "/images/DrivingAssistantGif.gif"
       },
       {
-        "title": "End-to-End Movie Management and Recommendation Platform",
-        "description": "Full-stack movie management and recommendation platform. Uses Django for CRUD, Airflow for data pipelines, PostgreSQL for storage, and FastAPI for real-time recommendations. Modular and production-ready.",
+        "title": "Full-Stack Movie Recommendation & Analytics Platform",
+        "description": "This project showcases an end-to-end data engineering pipeline integrated with a full-stack web application. It demonstrates data ingestion, transformation, analytics, and machine learning, all within a Netflix-like platform where users can browse movies, add favorites, and provide ratings & reviews.",
         "slug": "end-to-end-movie-management-and-recommendation-platform",
         "media": "/images/recommender.png"
       },

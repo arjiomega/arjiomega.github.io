@@ -15,7 +15,7 @@ export const Nav = () => {
             Richard Joseph Omega
           </span>
         </Link>
-        <ul className="flex items-center hidden space-x-8 lg:flex">
+        <ul className="items-center hidden space-x-8 lg:flex">
           <li><Link href="#profile" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">About</Link></li>
           <li><Link href="#experience" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Experience</Link></li>
           <li><Link href="#projects" className="font-medium tracking-wide text-gray-700 hover:text-purple-600">Projects</Link></li>

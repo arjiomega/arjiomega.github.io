@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 import "../../styles/header.css"
 import "../../styles/mediaheader.css"
@@ -45,17 +45,16 @@ const ProjectGenerator = ({
     description,
     media
 }: ProjectGeneratorProps) => {
-    const router = useRouter();
 
     return (
-        <div 
+        <Link 
+            href={`/projects/${slugify(title)}`}
             className="
                 shadow-lg flex-grow w-full lg:w-1/2 lg:h-72 flex-col-reverse 
                 lg:flex-row rounded flex justify-between overflow-hidden
                 hover:cursor-pointer hover:shadow-xl transition-all duration-300
                 hover:bg-gray-200
             "
-            onClick={() => router.push(`/projects/${slugify(title)}`)}
         >
             <div className="flex w-full h-full flex-col gap-5 lg:w-1/2 p-5">
                 <h2 className="font-bold text-l">{title}</h2>
@@ -70,7 +69,7 @@ const ProjectGenerator = ({
                     height={500}
                 />
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -79,7 +79,7 @@ export const Experience = () => {
         • Infrastructure: Containerized pipelines using Docker; PostgreSQL for structured data storage.
         • Deployment: Built demo API using AWS Lambda with Terraform for scalable serverless deployment.
         • Evaluation: Measured performance using RMSE and MAPE; tracked business KPIs like Cost Reduction % and Adoption Rate.`}
-        media={"/images/weld_gif.gif"}
+        media={"/images/farmPicture.png"}
         />
 
 
@@ -99,7 +99,7 @@ export const Experience = () => {
         • Evaluation: Used BLEU and ROUGE scores to assess response quality and alignment with expected output.
         • Integration: Injected dynamic content into prompts via SQL queries and public APIs to improve relevance and accuracy.
         • LLMOps: MLflow used for tracking prompt effectiveness, versioning, and rollback strategies.`}
-        media={"/images/weld_gif.gif"}
+        media={"/images/chatbotImg.png"}
         />
 
 
@@ -116,9 +116,8 @@ export const Experience = () => {
         • Docker for portable deployment and reproducible training environments.
         • Streamlit for building the interactive annotation interface.
         • Integrated evaluation tools to measure IoU and overlay comparisons for visual QA.`}
-        media={"/images/weld_gif.gif"}
+        media={"/images/xray_ai.jpg"}
         mediaSourceName="Deep Learning-Based Classification and Semantic Segmentation of Lung Tuberculosis Lesions in Chest X-ray Images"
-        mediaSourceURL="https://www.mdpi.com/2075-4418/14/9/952"
         />
 
         </Collapse>
