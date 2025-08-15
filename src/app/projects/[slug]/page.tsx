@@ -5,6 +5,7 @@ import fs from "fs/promises";
 import path from "path";
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from "remark-gfm";
 
 interface Project {
   slug: string;
@@ -54,7 +55,7 @@ export default async function ProjectPage({
   }
 
   // Convert markdown to HTML
-  const processed = await remark().use(html).process(markdown);
+  const processed = await remark().use(remarkGfm).use(html).process(markdown);
   const contentHtml = processed.toString();
 
   return (
@@ -66,6 +67,11 @@ export default async function ProjectPage({
           [&>h3]:text-xl [&>h3]:py-4 
           [&>p]:mb-4 
           [&>pre]:bg-gray-900 [&>pre]:text-green-200 [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:my-4 [&>pre]:overflow-x-auto
+          [&>table]:border-collapse [&>table]:border [&>table]:border-gray-400 [&>table]:w-full [&>table]:my-4
+          [&_th]:border [&_th]:border-gray-400 [&_th]:px-3 [&_th]:py-2 [&_th]:bg-gray-100
+          [&_td]:border [&_td]:border-gray-400 [&_td]:px-3 [&_td]:py-2
+        [&_tr:nth-child(even)]:bg-gray-50
+        [&_tr:hover]:bg-gray-100
           [&>ul]:list-disc 
           [&>ul]:pl-6
         "
