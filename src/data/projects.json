@@ -37,6 +37,19 @@
         "description": "Digit classification using classical ML models (SVM, k-NN, Decision Trees). Focused on interpretability and data-centric strategies, with image augmentation and grid search for hyperparameter tuning.",
         "slug": "robust-digit-classification-via-classical-ml-and-data-centric-optimization",
         "media": "/images/NumberClassificationGif.gif"
+      },
+
+      {
+        "title": "News Analysis Dashboard",
+        "description": "A news analysis dashboard that visualizes articles scraped daily by Airflow from a chosen news source and date, featuring named entity recognition (NER) and sentiment analysis for the top entities.",
+        "slug": "news-analysis-dashboard",
+        "media": "/projects_media/news_dashboard/news_analysis.png"
+      },
+      {
+        "title": "Fine Tuning Embedding Models and Model Selection Process for Information Retrieval",
+        "description": "Developed and fine-tuned embedding models for information retrieval tasks. Implemented a systematic model selection process, comparing multiple architectures and optimization strategies to maximize retrieval accuracy and relevance.",
+        "slug": "fine-tuning-embedding-models-and-model-selection-process-for-information-retrieval",
+        "media": "/projects_media/embedding_rag/embedding_rag.png"
       }
     ]
   },
